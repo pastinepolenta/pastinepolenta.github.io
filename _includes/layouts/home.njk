@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{% block subtitle %}
+  <div class='flex'>
+    <img class='me' alt='' src="{{ '/images/me.jpeg' | url }}" />
+    <h4>{{ metadata.subtitle }}</h4>
+  </div>
+{% endblock %}
+
+{{ content | safe }}
